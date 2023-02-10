@@ -9,26 +9,21 @@
   </head>
   <body>
     <div class="container">
-      <h2>TIC-TAC-TOE</h2>
-      <div class="board">
-        <div class="row">
-          <div class="cell" id="0"></div>
-          <div class="cell" id="1"></div>
-          <div class="cell" id="2"></div>
-        </div>
-        <div class="row">
-          <div class="cell" id="3"></div>
-          <div class="cell" id="4"></div>
-          <div class="cell" id="5"></div>
-        </div>
-        <div class="row">
-          <div class="cell" id="6"></div>
-          <div class="cell" id="7"></div>
-          <div class="cell" id="8"></div>
-        </div>
-        <span class="msg"></span>
+      <div class="jumbotron">TIC-TAC-TOE</div>
+      <canvas id="board" width="450" height="600"></canvas>
+      <div class="choose" id="choose">
+        <h2>Play Versus</h2>
+        <div class="computer">COMPUTER</div>
+        <div class="vs">VS</div>
+        <h2>Choose</h2>
+        <button id="X" class="x">X</button>
+        <button id="O" class="o">O</button><br />
+        <div class="play">PLAY</div>
       </div>
+      <div class="gameover hide"></div>
     </div>
+
+    <script src="options.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
